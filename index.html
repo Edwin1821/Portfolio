@@ -10,22 +10,29 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!--------- CURSOR ANIMATION --------------->
+
+
     <!-------------------- HEADER SECTION --------------------------->
-    <header class="active">
-        <a class="logo" href="#">Edwin.</a>
+    <header class="header">
+        <div class="logo_link">
+          <a href="#" class="logo">Portfolio</a>
+        </div>
+  
+        <i class="fa-solid fa-bars" id="menu_icon"></i>
+  
+     
+          <nav class="nav_link">
+            <a href="#hero" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact" class="last_a">Contact</a>
+          </nav>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </header>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Education</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-
-    <div class="bar-box active">
+    <!-- <div class="bar-box active">
         <div class="bar" style="--i:6;"></div>
         <div class="bar" style="--i:5;"></div>
         <div class="bar" style="--i:4;"></div>
@@ -33,69 +40,80 @@
         <div class="bar" style="--i:2;"></div>
         <div class="bar" style="--i:1;"></div>
     </div>
+     -->
+    <!---------------------- HERO SECTION ----------------------------->
     
-    <!---------------------- HOME SECTION ----------------------------->
-    
-    <section class="home active">
-        <div class="home-content">
-            <h1>Edwin Samuel</h1>
-            <h2><span class="typing-effect"></span></h2>
-            <p>I've made substantial progress in full stack web development,
-                significantly enhancing my skills across the board. I've become
-               particularly adept at efficient problem-solving, tackling complex
-               coding challenges with innovative solutions.
-            </p>   
-            <div class="btn-sci">
-                <a href="mailto:vsedwinsamuel2004@gmail.com" class="btn">Contact Me<i class="fa-solid fa-arrow-right"></i></a>
-                <div class="sci">
-                    <a href="https://github.com/Edwin1821"><i class="fa-brands fa-github"></i> </a>
-                    <a href="https://www.linkedin.com/in/edwinsamuel2004/"><i class="fa-brands fa-linkedin-in"></i> </a>
-                    <a href="https://wa.me/+919043335868"><i class="fa-brands fa-whatsapp"></i> </a>
-                    <a href="https://x.com/iamedwin93"><i class="fa-brands fa-twitter"></i> </a>
-                </div>
-            </div>
+    <section class="hero" id="hero">
+
+        <div class="hero_content_img">
+            <img src="assets/undraw_coding_joxb.png" alt="Profile Picture" />
         </div>
 
-        <div class="home-img">           
-            <div class="img-box">
-                <img src="./assets/hero2.png" alt="">
-            </div>           
+        <div class="hero_content">
+          <h1>Hi, I'am</h1>
+          <h2>Edwin Samuel</h2>
+          <h3 class="typing"><span id="typing_effect"></span></h3>
+          <p>
+            I've made substantial progress in full stack web development,
+            significantly enhancing my education across the board. I've become
+            particularly adept at efficient problem-solving, tackling complex
+            coding challenges with innovative solutions.
+          </p>
+  
+          <div class="social_links">
+            <a href="https://github.com/Edwin1821"
+              ><i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/edwinsamuel2004/"
+              ><i class='bx bxl-linkedin' ></i>
+            </a>
+            <a href="https://wa.me/+919043335868"
+              ><i class='bx bxl-whatsapp' ></i>
+            </a>
+  
+            <div class="btn">
+              <a href="mailto:vsedwinsamuel2004@gmail.com" target="_blank noopener">Contact Me<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+          </div>
         </div>
-    </section>
+  
+      </section>
 
     <!---------------------- ABOUT SECTION --------------------------->
-    <section class="about">
+    <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
-
-        <div class="about-img">
-            <img src="./assets/hero2.png" alt="">
+        <div class="about_content">
+          <div class="about_left_content">
+            <img src="./assets/hero2.png" alt="hero banner"/>
+          </div>
+  
+          <div class="about_right_content">
+            <h3>Who Am I?</h3>
+            <h3 class="hero_name">I'm Edwin Samuel</h3>
+              <h4>A Lead Full Stack Developer</h4>
+              <p>I'm taking pride in the impressive accomplishments I've achieved
+                  in the past six months towards become  a full stack web
+                  application developer. Each web application level has welcomed me
+                  with arms as I have improved in both front-end and back-end parts
+                  of the development process.
+              </p>
+              <div class="btn-box">
+                <a href="./assets/resume_edwin_samuel_vs (4).pdf" class="btn" download>Resume<i class="fa-solid fa-download"></i></a>
+              </div>
+          </div>
         </div>
-
-        <div class="about-content">
-            <h3>I'm Edwin Samuel</h3>
-            <h4>A Lead Full Stack Developer</h4>
-            <p>I'm taking pride in the impressive accomplishments I've achieved
-                in the past six months towards become  a full stack web
-                application developer. Each web application level has welcomed me
-                with arms as I have improved in both front-end and back-end parts
-                of the development process.
-            </p>
-            <div class="btn-box">
-                <a href="" class="btn">Resume <i class="fa-solid fa-download"></i></a>
-            </div>
-        </div>
-    </section>
+      </section>
 
     <!---------------------- EDUCATION SECTION --------------------------->
-    <section class="education">
+    <section class="education" id="education">
        <div class="education-container">
           <div class="education-box">
               <h2>Why Hire Me?</h2>
-              <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta cumque aperiam commodi totam et.</p>
+              <p class="descr">Proficient in both front-end and back-end development, ensuring seamless user experiences and robust server-side functionality.</p>
               <button class="education-btn active">Education</button>
               <button class="education-btn">Expericence</button>
               <button class="education-btn">Skills</button>
-              <button class="education-btn">Tools</button>
+              <button class="education-btn">Profile</button>
           </div>
 
           <div class="education-box">
@@ -106,13 +124,13 @@
                         <p class="year">2021 - 2025 - Present</p>
                         <h3>Bachelor of Technology - Anna University</h3>
                         <p>Prince Dr K Vasudevan College of Engineering and Technology</p>
-                        <p>CGPA - 7.90%</p>
+                        <p>CGPA - 7.80%</p>
                     </div>
                     <div class="education-item">
                         <p class="year">2020 - 2021</p>
                         <h3>Higher Secondary Certificate</h3>
                         <p>Zion Matriculation Higher Secondary School</p>
-                        <p>Percentage - 72.5%</p>
+                        <p>Percentage - 83.0%</p>
                     </div>
                     <div class="education-item">
                         <p class="year">2018 - 2019</p>
@@ -127,23 +145,29 @@
                 <h2 class="heading">My <span>Expericence</span></h2>
                 <div class="education-list">
                     <div class="education-item">
-                        <p class="year">2024 - Present - sixmonth</p>
+                        <p class="year">Jun 24 — Nov 24 - 6month</p>
                         <h3>Bigziel technologies Pvt-Ltd - Internship</h3>
                         <p>Full Stack Development</p>
-                        <p>I've made substantial progress in full stack web development, significantly enhancing my skills across the board.</p>
+                        <p>6-months Full Stack Development Internship .I've worked on Unislink Project and Plusgen .I Developed my practical education
+                            in JavaScript, HTML, CSS, Bootstrap, and React.js, node.js and mongodb through hands-on experience.</p>
                     </div>
                     <div class="education-item">
-                        <p class="year">2024 - Present - onemonth</p>
+                        <p class="year">Aug 22 — Nov 22 - 3month</p>
                         <h3>MRL Technologies - Internship</h3>
                         <p>IoT Farm Automation</p>
-                        <p> Improving Efficiency with Object Detection and Automated Water Spraying</p>
+                        <p>Internship on Smart Lighting Project using Rasberry Pi ,Enchancing Skills in Circuit Design, and System Integration while
+                            Collaborating with Experienced Engineers in the IOT Field.</p>
                     </div>
                 </div>
             </div>
 
             <div class="education-detail skills">
                 <h2 class="heading">My <span>Skills</span></h2>
-                <div class="skills-list">
+                <div class="education-list">
+                    <div class="skills-item">
+                        <i class='bx bxl-python' id="icon"></i>
+                        <span>Python3</span>
+                    </div>
                     <div class="skills-item">
                         <i class="fa-brands fa-html5"></i>
                         <span>HTML5</span>
@@ -154,60 +178,64 @@
                     </div>
                     <div class="skills-item">
                         <i class="fa-brands fa-js"></i>
-                        <span>Javascript</span>
+                        <span>JavaScript</span>
                     </div>
                     <div class="skills-item">
-                        <i class="fa-brands fa-react"></i>
-                        <span>React.js</span>
+                     <i class="fa-brands fa-react"></i>
+                        <span>React JS</span>
                     </div>
                     <div class="skills-item">
-                        <i class='bx bxl-tailwind-css'></i>
+                       <i class='bx bxl-tailwind-css' ></i>
                         <span>Tailwind</span>
                     </div>
                     <div class="skills-item">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <span>Bootstrap</span>
+                       <i class="fa-brands fa-bootstrap"></i>
+                        <span>Bootstrap5</span>
                     </div>
                     <div class="skills-item">
-                        <i class="fa-brands fa-node-js"></i>
-                        <span>Node.js</span>
+                        <i class='bx bxl-nodejs'></i>
+                        <span>Node JS</span>
                     </div>
                     <div class="skills-item">
-                        <i class='bx bxl-mongodb'></i>
+                       <i class='bx bxl-mongodb' ></i>
                         <span>MongoDB</span>
+                    </div>
+                    <div class="skills-item">
+                        <i class='bx bxs-data' ></i>
+                        <span>MySQL</span>
                     </div>
                 </div>
             </div>
 
             <div class="education-detail about">
-                <h2 class="heading">My <span>Additional Skills</span></h2>
-                <div class="skills-list">
-                    <div class="skills-item">
-                        <p>Name <span>Edwin Samuel</span></p>
+                <h2 class="heading">My <span>Profile</span></h2>
+                <div class="education-list">
+                    <div class="education-item">
+                       <p class="hero_info">Name:<span>Edwin Samuel VS</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>Gender <span>Male</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">Gender: <span>Male</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>DOB <span>24-07-2004</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">DOB: <span>24-07-2004</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>Status <span>Unmarried</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">Status: <span>Unmarried</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>City <span>Chennai, TamilNadu</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">City: <span>Chennai, TamilNadu</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>Nationality <span>Indian</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">Nationality: <span>Indian</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>Phone <span>(+91) 90433 35868</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">Phone: <span>(+91) 90433 35868</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>Email <span>vsedwinsamuel2004@gmail.com</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">Email: <span>vsedwinsamuel2004@gmail.com</span></p>
                     </div>
-                    <div class="skills-item">
-                        <p>Language <span>Tamil, English</span></p>
+                    <div class="education-item">
+                        <p class="hero_info">Language: <span>Tamil, English</span></p>
                     </div>
                 </div>
             </div>
@@ -215,42 +243,46 @@
     </section>
 
     <!---------------------- Portfolio SECTION --------------------------->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
                 <div class="portfolio-details active">
                     <p class="numb">01</p>
-                    <h3>Mern Stack Project</h3>
-                    <p>This project is about an online complaint registration and management system.</p>
+                    <h3>Online Complaint Registration</h3>
+                    <p>Developed a fully functional Online Complaint System that allows users to register and manage their complaints
+                        virtually, ensuring an efficient problem-reporting process.</p>
                     <div class="tech">
-                        <span>React.js, Bootstrap5, Node.js, Express.js, MongoDB</span>
+                        <span>HTML5, CSS3, JavaScript, React.js, Bootstrap5, Node.js, Express.js, MongoDB</span>
                     </div>
                     <div class="github-link">
-                        <a href="https://github.com/Edwin1821/Online-Complaint-System"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/Edwin1821/Online-Complaint-System" target="_blank noopener"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
                         <a href="https://github.com/Edwin1821/Online-Complaint-System" target="_blank noopener"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-details">
                     <p class="numb">02</p>
-                    <h3>Frontend project</h3>
-                    <p>This project is about an medical related website.</p>
+                    <h3>Chat Bot</h3>
+                    <p>Designed and developed a personalized chatbot to deepen understanding of conversational AI concepts and underlying
+                        mechanisms. Explored and implemented the functionality of REST APIs to facilitate seamless client-server interactions and enable
+                        dynamic communication between the browser and server.</p>
                     <div class="tech">
-                        <span>HTML5, CSS3, Javascript</span>
+                        <span>HTML5, CSS3, Javascript, React.js</span>
                     </div>
                     <div class="github-link">
-                        <a href="https://edwin1821.github.io/Plusgen/"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
-                        <a href="https://github.com/Edwin1821/Plusgen"  target="_blank noopener"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
+                        <a href="https://edwin1821.github.io/ChatBot/"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/Edwin1821/ChatBot"  target="_blank noopener"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-details">
                     <p class="numb">03</p>
                     <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ratione.</p>
+                    <p>Desgined a fully functional website which has pharmacy related contents. In this project i've used Html, Css, JavaScript
+                        to make the website responsive and user friendly.</p>
                     <div class="tech">
-                        <span>HTML5, CSS3</span>
+                        <span>HTML5, CSS3, JavaScript</span>
                     </div>
                     <div class="github-link">
                         <a href="https://edwin1821.github.io/Plusgen/"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
@@ -260,15 +292,34 @@
 
                 <div class="portfolio-details">
                     <p class="numb">04</p>
+                    <h3>Calculator</h3>
+                    <p>Designed a fully functional custom calculator that calculates the addition, substraction, multiplication, division, modulas based on the user input. 
+                    </p>
+                    <div class="tech">
+                        <span>HTML5, CSS3, JavaScript</span>
+                    </div>
+                    <div class="github-link">
+                        <a href="https://edwin1821.github.io/Plusgen/"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/Edwin1821/Plusgen" target="_blank noopener"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
+                    </div>
                 </div>
 
                 <div class="portfolio-details">
                     <p class="numb">05</p>
+                    <h3>Todo List </h3>
+                    <p>Just wrapped up a simple yet effective To-Do List App ✅ Add tasks ✅ Mark them as complete ✅ Delete when done. For this project I've used React.js and Tailwind css for styling and React hooks for state management.</p>
+                    <div class="tech">
+                        <span>HTML5, CSS3, JavaScript, React.js, Tailwind CSS</span>
+                    </div>
+                    <div class="github-link">
+                        <a href="https://edwin1821.github.io/Todo-List/"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
+                        <a href="https://github.com/Edwin1821/Todo-List" target="_blank noopener"><i class="fa-brands fa-github"></i><span>Github Repository</span></a>
+                    </div>
                 </div>
 
-                <div class="portfolio-details">
+                <!-- <div class="portfolio-details">
                     <p class="numb">06</p>
-                </div>
+                </div> -->
             </div>
 
             <div class="portfolio-box">
@@ -278,16 +329,16 @@
                             <img src="./assets/complaint img.png" alt="">
                         </div>
                         <div class="img-item">
-                            <img src="./assets/plusgen img.png" alt="">
+                            <img src="./assets/Screenshot 2025-02-03 175359.png" alt="">
                         </div>
                         <div class="img-item">
-                            <img src="./assets/unislink img.png" alt="">
+                            <img src="./assets/plusgen img.png" alt="">
                         </div>
                         <div class="img-item">
                             <img src="./assets/calculator img.png" alt="">
                         </div>
                         <div class="img-item">
-                            <img src="./assets/plusgen layout.png" alt="">
+                            <img src="./assets/TodoList.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -302,7 +353,7 @@
     </section>    
 
     <!--------------- CONTACT SECTION -------------------->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-box">
                 <h2>Let's Works Together</h2>

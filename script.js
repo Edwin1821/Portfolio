@@ -1,13 +1,12 @@
-var typed = new Typed(".typing-effect", {
-  strings: ["Frontend Developer", "Backend Developer", "Web Developer"],
+var typed = new Typed("#typing_effect", {
+  strings: ["Full Stack Developer", "Frontend Developer", "Backend Developer"],
   typeSpeed: 50,
   loop: true,
 });
-
 const navLinks = document.querySelectorAll("header nav a");
 const logoLink = document.querySelector(".logo");
 const sections = document.querySelectorAll('section');
-const menuIcon = document.querySelector('#menu-icon');
+const menuIcon = document.querySelector('#menu_icon');
 const navbar = document.querySelector('header nav');
 
 menuIcon.addEventListener('click', ()=>{
@@ -17,7 +16,6 @@ menuIcon.addEventListener('click', ()=>{
 
 const activePage = () => {
   const header = document.querySelector("header");
-  const barBox = document.querySelector(".bar-box");
 
   header.classList.remove("active");
   setTimeout(() => {
@@ -27,11 +25,6 @@ const activePage = () => {
   navLinks.forEach((link) => {
     link.classList.remove("active");
   });
-
-  barBox.classList.remove("active");
-  setTimeout(() => {
-    barBox.classList.add("active");
-  }, 1100);
 
   sections.forEach(sec => {
     sec.classList.remove("active");
@@ -91,6 +84,8 @@ eduBtn.forEach((btn, idx) => {
     eduDetails[idx].classList.add("active");
   });
 });
+
+
 
 const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
 const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
